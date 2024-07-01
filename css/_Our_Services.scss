@@ -1,0 +1,342 @@
+.ouerServises1 {
+  background-size: cover;
+  background: url(../img/menClean.jpg);
+  transition: 0.7s;
+  position: relative;
+  .navbar {
+    ul {
+      li a {
+        color: white;
+        font-size: 18px;
+      }
+
+      a:hover {
+        color: var(--blue-color);
+      }
+    }
+  }
+
+  h2 {
+    font-size: 40px;
+    color: white;
+    font-family: main3-font;
+  }
+
+  p {
+    padding-bottom: 80px;
+    font-size: 20px;
+  }
+}
+
+.more-courses {
+  .layer {
+    background: linear-gradient(to left, #33cbd32b, rgb(8 23 26));
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  .bg1-img {
+    background-image: url(../img/new/ddddd.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+
+    h3 {
+      color: white;
+      font-weight: main-font;
+      font-size: 22px;
+    }
+
+    .line {
+      margin-top: 15px;
+      width: 40px;
+      height: 8px;
+      background-color: var(--blue-color);
+      border-radius: 10px;
+    }
+
+    p {
+      color: rgb(206, 206, 206);
+      font-size: 20px;
+    }
+
+    button {
+      color: white;
+      font-family: main-font;
+      background-color: var(--blue-color);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 10%;
+    }
+  }
+
+  .bg2-img {
+    background-image: url(../img/new/about.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+
+    h3 {
+      color: white;
+      font-weight: main-font;
+      font-size: 22px;
+    }
+
+    .line {
+      margin-top: 15px;
+      width: 40px;
+      height: 8px;
+      background-color: var(--blue-color);
+      border-radius: 10px;
+    }
+
+    p {
+      color: rgb(206, 206, 206);
+      font-size: 20px;
+    }
+
+    button {
+      color: white;
+      font-family: main-font;
+      background-color: var(--blue-color);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 10%;
+    }
+  }
+
+  .bg3-img {
+    background-image: url(../img/new/company.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+
+    h3 {
+      color: white;
+      font-weight: main-font;
+      font-size: 22px;
+    }
+
+    .line {
+      margin-top: 15px;
+      width: 40px;
+      height: 8px;
+      background-color: var(--blue-color);
+      border-radius: 10px;
+    }
+
+    p {
+      color: rgb(206, 206, 206);
+      font-size: 20px;
+    }
+
+    button {
+      color: white;
+      font-family: main-font;
+      background-color: var(--blue-color);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 10%;
+    }
+  }
+
+  .bg4-img {
+    background-image: url(../img/new/company2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+
+    h3 {
+      margin-top: 10%;
+      color: white;
+      font-weight: main-font;
+      font-size: 18px;
+    }
+
+    .line {
+      margin-top: 15px;
+      width: 40px;
+      height: 8px;
+      background-color: var(--blue-color);
+      border-radius: 10px;
+    }
+
+    p {
+      color: rgb(206, 206, 206);
+      font-size: 20px;
+    }
+
+    button {
+      color: white;
+      font-family: main-font;
+      background-color: var(--blue-color);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 10%;
+    }
+  }
+
+  .bg5-img {
+    background-image: url(../img/new/d.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+
+    h3 {
+      color: white;
+      font-weight: main-font;
+      font-size: 22px;
+    }
+
+    .line {
+      margin-top: 15px;
+      width: 40px;
+      height: 8px;
+      background-color: var(--blue-color);
+      border-radius: 10px;
+    }
+
+    p {
+      color: rgb(206, 206, 206);
+      font-size: 20px;
+    }
+
+    button {
+      color: white;
+      font-family: main-font;
+      background-color: var(--blue-color);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 10%;
+    }
+  }
+
+  .bg6-img {
+    background-image: url(../img/new/fac2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+
+    h3 {
+      color: white;
+      font-weight: main-font;
+      font-size: 22px;
+    }
+
+    .line {
+      margin-top: 15px;
+      width: 40px;
+      height: 8px;
+      background-color: var(--blue-color);
+      border-radius: 10px;
+    }
+
+    p {
+      color: rgb(206, 206, 206);
+      font-size: 20px;
+    }
+
+    button {
+      color: white;
+      font-family: main-font;
+      background-color: var(--blue-color);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 10%;
+    }
+  }
+
+  .bg7-img {
+    background-image: url(../img/new/home.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+
+    h3 {
+      color: white;
+      font-weight: main-font;
+      font-size: 22px;
+    }
+
+    .line {
+      margin-top: 15px;
+      width: 40px;
+      height: 8px;
+      background-color: var(--blue-color);
+      border-radius: 10px;
+    }
+
+    p {
+      color: rgb(206, 206, 206);
+      font-size: 20px;
+    }
+
+    button {
+      color: white;
+      font-family: main-font;
+      background-color: var(--blue-color);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 10%;
+    }
+  }
+
+  .bg8-img {
+    background-image: url(../img/new/wash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+
+    h3 {
+      color: white;
+      font-weight: main-font;
+      font-size: 22px;
+    }
+
+    .line {
+      margin-top: 15px;
+      width: 40px;
+      height: 8px;
+      background-color: var(--blue-color);
+      border-radius: 10px;
+    }
+
+    p {
+      color: rgb(206, 206, 206);
+      font-size: 20px;
+    }
+
+    button {
+      color: white;
+      font-family: main-font;
+      background-color: var(--blue-color);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 10%;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.headeer {
+  background: linear-gradient(to left, rgba(11, 12, 12, 0.49), rgb(8 23 26));
+  width: 100%;
+}
+.contact-me1 {
+  background-size: cover;
+  background: url(../img/menClean.jpg);
+  position: relative;
+
+  .navbar {
+    ul {
+      li a {
+        color: white;
+        font-size: 18px;
+      }
+
+      a:hover {
+        color: var(--blue-color);
+      }
+    }
+  }
+
+  h2 {
+    font-size: 40px;
+    color: white;
+    font-family: main3-font;
+  }
+
+  p {
+    padding-bottom: 80px;
+    font-size: 20px;
+  }
+}
+
+.email1 {
+  .bg-liner {
+    background: linear-gradient(to left, #1790b1b5, #1b95b7);
+  }
+  .bg-img {
+    background-image: url(../img/cleen.jpg);
+    background-size: cover;
+
+    p {
+      font-family: main6-font;
+      color: white;
+      font-size: 20px;
+    }
+
+    hr {
+      color: white;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+  }
+
+  h5 {
+    font-size: 25px;
+    font-family: main3-font;
+  }
+
+  .line {
+    background-color: var(--blue-color);
+    width: 50px;
+    height: 5px;
+    border-radius: 10px;
+  }
+
+  input,
+  textarea {
+    position: relative;
+    background-color: #f1f9fb;
+    padding: 10px;
+  }
+
+  input {
+    height: 50px;
+  }
+
+  input::placeholder {
+    padding-left: 25px;
+    font-family: main4-font;
+  }
+
+  .icon1 {
+    background-image: url(../images/user.png);
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    padding: 10px;
+  }
+
+  .icon2 {
+    background-image: url(../images/mmail.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 10px;
+  }
+
+  .icon3 {
+    background-image: url(../images/write.png);
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    top: 0;
+  }
+
+  textarea::placeholder {
+    padding-left: 25px;
+  }
+
+  button {
+    margin-left: 40%;
+    background-color: var(--blue-color);
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-bottom: 17px;
+  }
+}

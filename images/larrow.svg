@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47">
+  <g id="larrow" transform="translate(444 95.089) rotate(180)">
+    <g id="arrow-left_bulk" data-name="arrow-left/bulk" transform="translate(397 48.089)">
+      <g id="vuesax_bulk_arrow-left" data-name="vuesax/bulk/arrow-left">
+        <g id="arrow-left">
+          <path id="Vector" d="M39.143,19.571A19.571,19.571,0,1,1,19.571,0,19.571,19.571,0,0,1,39.143,19.571Z" transform="translate(3.929 3.929)" fill="#199ebd" opacity="0.4"/>
+          <path id="Vector-2" data-name="Vector" d="M15.218,5.888H5.024L8.4,2.509A1.472,1.472,0,0,0,6.32.427L.427,6.32a1.482,1.482,0,0,0,0,2.082L6.32,14.295a1.47,1.47,0,0,0,2.082,0,1.482,1.482,0,0,0,0-2.082L5.024,8.834H15.218a1.473,1.473,0,1,0,0-2.946Z" transform="translate(15.157 16.139)" fill="#199ebd"/>
+          <path id="Vector-3" data-name="Vector" d="M0,0H47V47H0Z" fill="none" opacity="0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
