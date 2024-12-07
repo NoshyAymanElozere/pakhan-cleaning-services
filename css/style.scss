@@ -7,6 +7,7 @@
 body {
   overflow-x: hidden !important;
 }
+
 @font-face {
   font-family: main-font;
   src: url(../Source/Montserrat-Bold.ttf);
@@ -26,9 +27,6 @@ body {
   font-family: main4-font;
   src: url(../Source/Montserrat-Medium.ttf);
 }
-body {
-  cursor: url("../img/icons8-broom-48.png"), auto;
-}
 
 @font-face {
   font-family: main5-font;
@@ -41,7 +39,7 @@ body {
 }
 
 :root {
-  --blue-color: #199ebd;
+  --primary: #ff6400;
   --section-color: #f8fcfd;
   --yellow-color: #fed500;
   --light-color: #fff;
@@ -55,18 +53,18 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #0dcaf0, #444);
+  background: linear-gradient(180deg, #ff6400, #444);
   border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #000, #084298);
+  background: linear-gradient(180deg, #000, #ff6400);
 }
 ////////////////////////////
 
 // start-features-page//
 .header {
-  background: linear-gradient(to left, rgba(11, 12, 12, 0.49), rgb(8 23 26));
+  // background: linear-gradient(to left, rgba(11, 12, 12, 0.49), rgb(8 23 26));
   height: 100vh;
   width: 100%;
   animation: rotation 40s linear infinite backwards;
@@ -87,11 +85,13 @@ body {
   }
 }
 .navbar {
-  backdrop-filter: blur(3px);
+  overflow: hidden !important;
+  height: 56px !important;
+  position: relative !important;
   .navbar-brand {
     img {
       width: 150px;
-      height: 70px;
+      margin-top: -62px !important;
     }
   }
   .nav-link::after {
@@ -111,31 +111,44 @@ body {
       font-size: 18px;
     }
     a:hover {
-      color: var(--blue-color);
+      color: var(--primary);
     }
   }
 }
-
+.dashed {
+  border: dashed !important;
+}
+.advatage {
+  span {
+    text-align: center !important;
+  }
+  .imgcard {
+    height: 80px !important;
+  }
+}
 .features {
-  background: url(../img/menClean.jpg);
+  background: linear-gradient(to left, rgb(11 12 12 / 19%), rgb(8 23 26 / 85%)),
+    url(../img/transito/bg2.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
-  height: 100% !important;
-
+  height: 90vh !important;
+  .maincolor {
+    color: var(--light-color) !important;
+  }
   @media (max-width: 990px) {
     .arrow-down {
       right: 10px;
     }
   }
   span {
-    color: var(--blue-color);
+    color: var(--primary);
   }
   h1 {
     font-family: main-font;
-    font-size: 35px;
+    font-size: 34px;
     color: white;
     max-width: 700px;
     color: var(--light-color);
@@ -155,9 +168,15 @@ body {
     width: 100%;
     z-index: 8888;
     .description {
+      display: flex;
       font-size: 19px;
       margin-bottom: 30px;
       color: var(--yellow-color) !important;
+      z-index: 888888 !important;
+      font-weight: bold !important;
+      img {
+        width: 30px;
+      }
     }
   }
 
@@ -170,7 +189,7 @@ body {
 
   .btn-group {
     .blue-btn {
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       border: none;
       padding: 10px 20px;
       border-radius: 10px;
@@ -244,6 +263,30 @@ body {
     }
   }
 }
+// start advice sevtion
+.advice {
+  p {
+    font-family: main5-font;
+    font-size: 14px !important;
+    padding: 5px 0;
+    text-align: left !important;
+    vertical-align: middle;
+    hyphens: auto;
+  }
+  span {
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    text-align: left !important;
+    font-family: main-font;
+  }
+  h4 {
+    font-size: 20px !important;
+    height: 50px !important;
+  }
+  // img {
+  //   height: 100% !important;
+  // }
+}
 
 //start-about-page//
 .about {
@@ -252,7 +295,7 @@ body {
   h2 {
     font-family: main-font;
     font-size: 2rem;
-    color: var(--blue-color);
+    color: var(--primary) !important;
   }
   #photo {
     max-height: 470px !important;
@@ -261,7 +304,7 @@ body {
 
   .about-text {
     span {
-      color: var(--blue-color);
+      color: var(--primary);
       font-family: main-font;
     }
 
@@ -271,7 +314,7 @@ body {
     }
   }
   .active-line {
-    background-color: var(--blue-color);
+    background-color: var(--primary);
     width: 130px;
     height: 3px;
     border-radius: 50%;
@@ -281,7 +324,7 @@ body {
   }
   .btn-group {
     .blue-btn {
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       border: none;
       padding: 10px 20px;
       border-radius: 10px;
@@ -300,13 +343,13 @@ body {
     background: linear-gradient(to left, #33cbd32b, rgb(8 23 26));
     width: 100%;
     height: 100%;
-    padding: 35px;
+    padding: 20px;
   }
   background-color: var(--section-color);
   position: relative;
 
   h3 {
-    padding-top: 80px;
+    padding-top: 10px;
     font-weight: bold;
     font-size: 2rem;
   }
@@ -316,7 +359,7 @@ body {
       position: absolute;
       text-decoration: none;
       right: 13%;
-      color: var(--blue-color);
+      color: var(--primary);
       font-family: main-font;
       top: 80px;
     }
@@ -338,12 +381,11 @@ body {
   }
 
   .bg1-img {
-    background-image: url(../img/new/WhatsApp\ Image\ 2024-04-30\ at\ 10.44.15.jpeg);
+    background-image: url(../img/transito/c1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
-    // padding: 20px;
 
     h3 {
       color: white;
@@ -355,23 +397,33 @@ body {
       margin-top: 15px;
       width: 40px;
       height: 8px;
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       border-radius: 10px;
     }
 
     p {
       color: rgb(206, 206, 206);
       font-size: 20px;
+    }
+
+    button {
+      color: white;
+      font-family: main-font;
+      background-color: var(--primary);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 10%;
     }
   }
 
   .bg2-img {
-    background-image: url(../img/new/WhatsApp\ Image\ 2024-04-30\ at\ 10.44.16.jpeg);
+    background-image: url(../img/transito/c2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
-    // padding: 20px;
 
     h3 {
       color: white;
@@ -383,23 +435,33 @@ body {
       margin-top: 15px;
       width: 40px;
       height: 8px;
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       border-radius: 10px;
     }
 
     p {
       color: rgb(206, 206, 206);
       font-size: 20px;
+    }
+
+    button {
+      color: white;
+      font-family: main-font;
+      background-color: var(--primary);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 10%;
     }
   }
 
   .bg3-img {
-    background-image: url(../img/new/WhatsApp\ Image\ 2024-04-30\ at\ 10.44.18.jpeg);
+    background-image: url(../img/transito/c3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
-    // padding: 20px;
 
     h3 {
       color: white;
@@ -411,35 +473,46 @@ body {
       margin-top: 15px;
       width: 40px;
       height: 8px;
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       border-radius: 10px;
     }
 
     p {
       color: rgb(206, 206, 206);
       font-size: 20px;
+    }
+
+    button {
+      color: white;
+      font-family: main-font;
+      background-color: var(--primary);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 10%;
     }
   }
 
   .bg4-img {
-    background-image: url(../img/new/WhatsApp\ Image\ 2024-04-30\ at\ 10.44.20.jpeg);
+    background-image: url(../img/transito/c4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
-    // padding: 20px;
 
     h3 {
+      margin-top: 10%;
       color: white;
       font-weight: main-font;
-      font-size: 22px;
+      font-size: 18px;
     }
 
     .line {
       margin-top: 15px;
       width: 40px;
       height: 8px;
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       border-radius: 10px;
     }
 
@@ -447,9 +520,20 @@ body {
       color: rgb(206, 206, 206);
       font-size: 20px;
     }
+
+    button {
+      color: white;
+      font-family: main-font;
+      background-color: var(--primary);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 10%;
+    }
   }
   .bg5-img {
-    background-image: url(../img/new/WhatsApp\ Image\ 2024-04-30\ at\ 10.44.23.jpeg);
+    background-image: url(../img/transito/car4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -466,7 +550,7 @@ body {
       margin-top: 15px;
       width: 40px;
       height: 8px;
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       border-radius: 10px;
     }
 
@@ -476,7 +560,7 @@ body {
     }
   }
   .bg6-img {
-    background-image: url(../img/new/WhatsApp\ Image\ 2024-04-30\ at\ 10.44.24.jpeg);
+    background-image: url(../img/transito/car1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -493,7 +577,7 @@ body {
       margin-top: 15px;
       width: 40px;
       height: 8px;
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       border-radius: 10px;
     }
 
@@ -503,7 +587,7 @@ body {
     }
   }
   .bg7-img {
-    background-image: url(../img/new/WhatsApp\ Image\ 2024-04-30\ at\ 10.44.43.jpeg);
+    background-image: url(../img/transito/car2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -520,7 +604,7 @@ body {
       margin-top: 15px;
       width: 40px;
       height: 8px;
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       border-radius: 10px;
     }
 
@@ -530,7 +614,7 @@ body {
     }
   }
   .bg8-img {
-    background-image: url(../img/new/WhatsApp\ Image\ 2024-04-30\ at\ 10.44.39.jpeg);
+    background-image: url(../img/transito/car5.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -547,7 +631,7 @@ body {
       margin-top: 15px;
       width: 40px;
       height: 8px;
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       border-radius: 10px;
     }
 
@@ -557,7 +641,7 @@ body {
     }
   }
   .bg9-img {
-    background-image: url(../img/new/WhatsApp\ Image\ 2024-04-30\ at\ 10.44.23.jpeg);
+    background-image: url(../img/transito/car3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -574,7 +658,7 @@ body {
       margin-top: 15px;
       width: 40px;
       height: 8px;
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       border-radius: 10px;
     }
 
@@ -582,6 +666,9 @@ body {
       color: rgb(206, 206, 206);
       font-size: 20px;
     }
+  }
+  #TransCito {
+    color: var(--primary) !important;
   }
 
   .owl-theme .owl-dots .owl-dot span {
@@ -599,7 +686,7 @@ body {
       margin-left: 3px;
       width: 50px;
       height: 3px;
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       border-radius: 10px;
     }
 
@@ -607,7 +694,7 @@ body {
       margin-left: 3px;
       width: 50px;
       height: 3px;
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       border-radius: 10px;
     }
   }
@@ -615,8 +702,19 @@ body {
 
 //  start-contect-section//
 .contact-me {
+  a {
+    background-color: var(--primary);
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-bottom: 17px;
+    width: 222px;
+    margin: auto !important;
+  }
   .content {
-    background-image: linear-gradient(to right, #423d43, var(--blue-color));
+    background-image: linear-gradient(to right, #000000d1, var(--primary));
     border-radius: 20px;
     width: 100%;
     position: relative;
@@ -631,7 +729,7 @@ body {
 
     span {
       font-size: inherit;
-      color: var(--blue-color);
+      color: var(--primary);
       font-family: main-font;
     }
 
@@ -675,7 +773,7 @@ body {
   }
 
   .line {
-    background-color: var(--blue-color);
+    background-color: var(--primary);
     width: 50px;
     height: 5px;
     border-radius: 10px;
@@ -725,7 +823,7 @@ body {
 
   button {
     margin-left: 40%;
-    background-color: var(--blue-color);
+    background-color: var(--primary);
     color: white;
     font-weight: 500;
     border: none;
@@ -734,7 +832,9 @@ body {
     margin-bottom: 17px;
   }
 }
-
+h3 {
+  color: var(--primary) !important;
+}
 // start-footer//
 .footer {
   .bg {
@@ -743,7 +843,7 @@ body {
   }
   position: relative;
   margin-top: 80px;
-  background-image: url(../img/cleanGlasses.jpg);
+  background-image: url(../img/transito/plante.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -751,9 +851,18 @@ body {
     font-size: 20px;
     color: white;
   }
+  a {
+    background-color: var(--primary);
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
 
   h5 {
-    color: var(--blue-color);
+    color: var(--primary);
     font-family: main6-font;
   }
 
@@ -767,12 +876,13 @@ body {
   hr {
     width: 85%;
     color: white;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     margin: auto;
+    margin-top: 21px;
   }
 
   span {
-    color: var(--blue-color);
+    color: var(--primary);
     font-family: main5-font;
     font-weight: 700;
   }
@@ -792,5 +902,83 @@ nav .active {
   font-family: main-font;
   a {
     color: #199ebd !important;
+  }
+}
+@media (max-width: 768px) {
+  h2,
+  h4,
+  h3 {
+    font-size: 1rem !important;
+  }
+  .contact-me .content p {
+    font-size: 16px !important;
+  }
+}
+.owl-dot {
+  margin-left: 3px;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary) !important;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+.owl-dots .active {
+  background-color: var(--primary) !important;
+  opacity: 1 !important;
+}
+#endText {
+  color: #ff6400 !important;
+  margin: auto;
+  width: 80%;
+  color: #ff6400 !important;
+  margin: auto;
+  width: 80%;
+  text-align: start;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  #endText {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  #direc {
+    direction: ltr !important;
+  }
+}
+.main2 {
+  font-size: 40px !important;
+  color: white;
+  font-family: system-ui !important;
+  font-weight: 800 !important;
+  /* font-family: main3-font; */
+  letter-spacing: 0.4px !important;
+}
+.head {
+  background: linear-gradient(
+    to left,
+    rgb(11 12 12 / 22%),
+    rgb(8 23 26 / 75%)
+  ) !important;
+}
+#w22,
+#w23,
+#w24 {
+  margin-top: -22px !important;
+}
+.f12 {
+  font-size: 12px !important;
+  margin: 3px 0px !important;
+}
+.m5 {
+  margin: 3px 0 !important;
+}
+.bg1-img,
+.bg2-img,
+.bg1-img3,
+.bg4-img {
+  p {
+    margin: 0px 0 !important;
   }
 }

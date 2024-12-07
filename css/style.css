@@ -6,16 +6,17 @@
 
 .about2 {
   background-size: cover;
-  background: url(../img/menClean.jpg);
+  background: url(../img/transito/bg2.webp);
   background-position: center;
   position: relative;
+  margin-top: -54px;
 }
 .about2 .navbar ul li a {
   color: white;
   font-size: 18px;
 }
 .about2 .navbar ul a:hover {
-  color: var(--blue-color);
+  color: var(--primary);
 }
 .about2 h2 {
   font-size: 40px;
@@ -29,10 +30,10 @@
 
 .information {
   position: relative;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 .information .Pakhane {
-  max-height: 405px;
+  height: 100% !important;
   width: 100%;
 }
 @media (max-width: 991px) {
@@ -40,14 +41,22 @@
     max-height: 305px;
     width: 100%;
   }
+  .information .misin {
+    margin: 10px !important;
+  }
 }
 .information .about-text span {
-  color: var(--blue-color);
+  color: var(--primary);
   font-family: main-font;
+  font-size: 16px !important;
 }
 .information .about-text p {
-  font-size: 20px;
-  line-height: 1.5;
+  overflow: hidden !important;
+  font-size: 15px;
+  line-height: 1.5 !important;
+  margin: 0 !important;
+  margin: 4px 0 !important;
+  text-align: left !important;
 }
 
 .misin {
@@ -57,44 +66,115 @@
 }
 
 h3 {
-  padding-top: 80px;
+  padding-top: 10px;
   font-weight: bold;
   font-size: 2rem;
 }
 
+.nonMargin li {
+  color: #ff6400 !important;
+}
 .nonMargin p {
-  font-size: 18px !important;
-  margin: 10px !important;
+  font-size: 17px !important;
+  margin: 10px 0px !important;
+  color: black !important;
+  text-align: left !important;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 
 .more {
   margin-top: 70px;
-  background-image: linear-gradient(to right, #423d43, var(--blue-color));
+  background-image: linear-gradient(to right, #423d43, var(--primary));
   border-radius: 10px;
 }
 .more h2 {
-  font-size: 50px;
+  font-size: 30px;
   font-family: main1-font;
   color: white;
   margin-bottom: 30px;
 }
 .more h2 span {
-  color: var(--blue-color);
+  color: var(--primary);
 }
-.more button {
-  background-color: transparent;
+.more a {
+  background-color: #ff6400;
   color: white;
   border: 1px solid white;
   border-radius: 5px;
-  padding: 15px 25px;
+  padding: 15px 19px;
   margin-left: 50%;
   transform: translateX(-50%);
+  font-weight: 800;
   margin-bottom: 70px;
+  display: inline-block;
+  text-decoration: none;
 }
 
-.headeer {
-  background: linear-gradient(to left, rgba(11, 12, 12, 0.49), rgb(8, 23, 26));
+.navbar {
+  overflow: hidden !important;
+  height: 56px !important;
+  position: relative !important;
+}
+.navbar .navbar-brand img {
+  width: 150px;
+  margin-top: -62px !important;
+}
+.navbar .nav-link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #199ebd;
+  display: block;
+  transition: 0.5s;
+}
+.navbar .nav-link:hover::after {
   width: 100%;
+}
+.navbar ul li a {
+  color: white;
+  font-size: 18px;
+}
+.navbar ul a:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .misin {
+    padding: 5px !important;
+  }
+}
+.information2 {
+  padding-top: 5px !important;
+}
+.information2 span {
+  font-size: 15px;
+}
+.information2 p {
+  font-size: 14px !important;
+}
+.information2 .more a {
+  padding: 2px 8px !important;
+}
+
+.cars .card {
+  margin: 10px 0;
+  border: none;
+  min-height: 365px !important;
+  background-color: rgba(249, 249, 249, 0.4117647059);
+  box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.1882352941);
+}
+.cars .card .card-title {
+  color: var(--primary);
+  font-size: 19px;
+  font-weight: 700;
+  font-family: "main-font";
+}
+.cars .card .card-body {
+  font-size: 16px !important;
+  font-weight: 500;
+  font-family: main4-font;
+  color: grey;
 }
 
 .contact-me1 {
@@ -107,7 +187,7 @@ h3 {
   font-size: 18px;
 }
 .contact-me1 .navbar ul a:hover {
-  color: var(--blue-color);
+  color: var(--primary);
 }
 .contact-me1 h2 {
   font-size: 40px;
@@ -142,7 +222,7 @@ h3 {
   font-family: main3-font;
 }
 .email1 .line {
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   width: 50px;
   height: 5px;
   border-radius: 10px;
@@ -190,7 +270,7 @@ h3 {
 }
 .email1 button {
   margin-left: 40%;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   color: white;
   font-weight: 500;
   border: none;
@@ -210,7 +290,7 @@ h3 {
   font-size: 18px;
 }
 .ouerServises1 .navbar ul a:hover {
-  color: var(--blue-color);
+  color: var(--primary);
 }
 .ouerServises1 h2 {
   font-size: 40px;
@@ -229,7 +309,7 @@ h3 {
   padding: 20px;
 }
 .more-courses .bg1-img {
-  background-image: url(../img/new/ddddd.jpeg);
+  background-image: url(../img/transito/c1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -244,7 +324,7 @@ h3 {
   margin-top: 15px;
   width: 40px;
   height: 8px;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   border-radius: 10px;
 }
 .more-courses .bg1-img p {
@@ -254,7 +334,7 @@ h3 {
 .more-courses .bg1-img button {
   color: white;
   font-family: main-font;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
@@ -262,7 +342,7 @@ h3 {
   margin-bottom: 10%;
 }
 .more-courses .bg2-img {
-  background-image: url(../img/new/about.jpeg);
+  background-image: url(../img/transito/c2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -277,7 +357,7 @@ h3 {
   margin-top: 15px;
   width: 40px;
   height: 8px;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   border-radius: 10px;
 }
 .more-courses .bg2-img p {
@@ -287,7 +367,7 @@ h3 {
 .more-courses .bg2-img button {
   color: white;
   font-family: main-font;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
@@ -295,7 +375,7 @@ h3 {
   margin-bottom: 10%;
 }
 .more-courses .bg3-img {
-  background-image: url(../img/new/company.jpeg);
+  background-image: url(../img/transito/c3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -310,7 +390,7 @@ h3 {
   margin-top: 15px;
   width: 40px;
   height: 8px;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   border-radius: 10px;
 }
 .more-courses .bg3-img p {
@@ -320,7 +400,7 @@ h3 {
 .more-courses .bg3-img button {
   color: white;
   font-family: main-font;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
@@ -328,7 +408,7 @@ h3 {
   margin-bottom: 10%;
 }
 .more-courses .bg4-img {
-  background-image: url(../img/new/company2.jpeg);
+  background-image: url(../img/transito/c4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -344,7 +424,7 @@ h3 {
   margin-top: 15px;
   width: 40px;
   height: 8px;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   border-radius: 10px;
 }
 .more-courses .bg4-img p {
@@ -354,139 +434,7 @@ h3 {
 .more-courses .bg4-img button {
   color: white;
   font-family: main-font;
-  background-color: var(--blue-color);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  margin-top: 20px;
-  margin-bottom: 10%;
-}
-.more-courses .bg5-img {
-  background-image: url(../img/new/d.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10px;
-}
-.more-courses .bg5-img h3 {
-  color: white;
-  font-weight: main-font;
-  font-size: 22px;
-}
-.more-courses .bg5-img .line {
-  margin-top: 15px;
-  width: 40px;
-  height: 8px;
-  background-color: var(--blue-color);
-  border-radius: 10px;
-}
-.more-courses .bg5-img p {
-  color: rgb(206, 206, 206);
-  font-size: 20px;
-}
-.more-courses .bg5-img button {
-  color: white;
-  font-family: main-font;
-  background-color: var(--blue-color);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  margin-top: 20px;
-  margin-bottom: 10%;
-}
-.more-courses .bg6-img {
-  background-image: url(../img/new/fac2.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10px;
-}
-.more-courses .bg6-img h3 {
-  color: white;
-  font-weight: main-font;
-  font-size: 22px;
-}
-.more-courses .bg6-img .line {
-  margin-top: 15px;
-  width: 40px;
-  height: 8px;
-  background-color: var(--blue-color);
-  border-radius: 10px;
-}
-.more-courses .bg6-img p {
-  color: rgb(206, 206, 206);
-  font-size: 20px;
-}
-.more-courses .bg6-img button {
-  color: white;
-  font-family: main-font;
-  background-color: var(--blue-color);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  margin-top: 20px;
-  margin-bottom: 10%;
-}
-.more-courses .bg7-img {
-  background-image: url(../img/new/home.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10px;
-}
-.more-courses .bg7-img h3 {
-  color: white;
-  font-weight: main-font;
-  font-size: 22px;
-}
-.more-courses .bg7-img .line {
-  margin-top: 15px;
-  width: 40px;
-  height: 8px;
-  background-color: var(--blue-color);
-  border-radius: 10px;
-}
-.more-courses .bg7-img p {
-  color: rgb(206, 206, 206);
-  font-size: 20px;
-}
-.more-courses .bg7-img button {
-  color: white;
-  font-family: main-font;
-  background-color: var(--blue-color);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  margin-top: 20px;
-  margin-bottom: 10%;
-}
-.more-courses .bg8-img {
-  background-image: url(../img/new/wash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10px;
-}
-.more-courses .bg8-img h3 {
-  color: white;
-  font-weight: main-font;
-  font-size: 22px;
-}
-.more-courses .bg8-img .line {
-  margin-top: 15px;
-  width: 40px;
-  height: 8px;
-  background-color: var(--blue-color);
-  border-radius: 10px;
-}
-.more-courses .bg8-img p {
-  color: rgb(206, 206, 206);
-  font-size: 20px;
-}
-.more-courses .bg8-img button {
-  color: white;
-  font-family: main-font;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
@@ -563,10 +511,6 @@ body {
   font-family: main4-font;
   src: url(../Source/Montserrat-Medium.ttf);
 }
-body {
-  cursor: url("../img/icons8-broom-48.png"), auto;
-}
-
 @font-face {
   font-family: main5-font;
   src: url(../Source/Montserrat-Regular.ttf);
@@ -576,7 +520,7 @@ body {
   src: url(../Source/Montserrat-SemiBold.ttf);
 }
 :root {
-  --blue-color: #199ebd;
+  --primary: #ff6400;
   --section-color: #f8fcfd;
   --yellow-color: #fed500;
   --light-color: #fff;
@@ -591,16 +535,15 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #0dcaf0, #444);
+  background: linear-gradient(180deg, #ff6400, #444);
   border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #000, #084298);
+  background: linear-gradient(180deg, #000, #ff6400);
 }
 
 .header {
-  background: linear-gradient(to left, rgba(11, 12, 12, 0.49), rgb(8, 23, 26));
   height: 100vh;
   width: 100%;
   animation: rotation 40s linear infinite backwards;
@@ -622,12 +565,13 @@ body {
   }
 }
 .navbar {
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
+  overflow: hidden !important;
+  height: 56px !important;
+  position: relative !important;
 }
 .navbar .navbar-brand img {
   width: 150px;
-  height: 70px;
+  margin-top: -62px !important;
 }
 .navbar .nav-link::after {
   content: "";
@@ -645,17 +589,31 @@ body {
   font-size: 18px;
 }
 .navbar ul a:hover {
-  color: var(--blue-color);
+  color: var(--primary);
+}
+
+.dashed {
+  border: dashed !important;
+}
+
+.advatage span {
+  text-align: center !important;
+}
+.advatage .imgcard {
+  height: 80px !important;
 }
 
 .features {
-  background: url(../img/menClean.jpg);
+  background: linear-gradient(to left, rgba(11, 12, 12, 0.19), rgba(8, 23, 26, 0.85)), url(../img/transito/bg2.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
-  height: 100% !important;
+  height: 90vh !important;
+}
+.features .maincolor {
+  color: var(--light-color) !important;
 }
 @media (max-width: 990px) {
   .features .arrow-down {
@@ -663,11 +621,11 @@ body {
   }
 }
 .features span {
-  color: var(--blue-color);
+  color: var(--primary);
 }
 .features h1 {
   font-family: main-font;
-  font-size: 35px;
+  font-size: 34px;
   color: white;
   max-width: 700px;
   color: var(--light-color);
@@ -688,9 +646,15 @@ body {
   z-index: 8888;
 }
 .features .txt .description {
+  display: flex;
   font-size: 19px;
   margin-bottom: 30px;
   color: var(--yellow-color) !important;
+  z-index: 888888 !important;
+  font-weight: bold !important;
+}
+.features .txt .description img {
+  width: 30px;
 }
 .features .main-text {
   font-weight: 500;
@@ -699,7 +663,7 @@ body {
   margin-bottom: 30px;
 }
 .features .btn-group .blue-btn {
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   border: none;
   padding: 10px 20px;
   border-radius: 10px;
@@ -769,20 +733,40 @@ body {
   border-radius: 10px;
 }
 
+.advice p {
+  font-family: main5-font;
+  font-size: 14px !important;
+  padding: 5px 0;
+  text-align: left !important;
+  vertical-align: middle;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
+.advice span {
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  text-align: left !important;
+  font-family: main-font;
+}
+.advice h4 {
+  font-size: 20px !important;
+  height: 50px !important;
+}
+
 .about {
   position: relative;
 }
 .about h2 {
   font-family: main-font;
   font-size: 2rem;
-  color: var(--blue-color);
+  color: var(--primary) !important;
 }
 .about #photo {
   max-height: 470px !important;
   width: 100% !important;
 }
 .about .about-text span {
-  color: var(--blue-color);
+  color: var(--primary);
   font-family: main-font;
 }
 .about .about-text p {
@@ -790,7 +774,7 @@ body {
   line-height: 1.5;
 }
 .about .active-line {
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   width: 130px;
   height: 3px;
   border-radius: 50%;
@@ -798,7 +782,7 @@ body {
   margin-bottom: 20px;
 }
 .about .btn-group .blue-btn {
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   border: none;
   padding: 10px 20px;
   border-radius: 10px;
@@ -817,10 +801,10 @@ body {
   background: linear-gradient(to left, rgba(51, 203, 211, 0.168627451), rgb(8, 23, 26));
   width: 100%;
   height: 100%;
-  padding: 35px;
+  padding: 20px;
 }
 .ouerServises h3 {
-  padding-top: 80px;
+  padding-top: 10px;
   font-weight: bold;
   font-size: 2rem;
 }
@@ -828,7 +812,7 @@ body {
   position: absolute;
   text-decoration: none;
   right: 13%;
-  color: var(--blue-color);
+  color: var(--primary);
   font-family: main-font;
   top: 80px;
 }
@@ -847,7 +831,7 @@ body {
   position: relative;
 }
 .ouerServises .bg1-img {
-  background-image: url(../img/new/WhatsApp\ Image\ 2024-04-30\ at\ 10.44.15.jpeg);
+  background-image: url(../img/transito/c1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -862,15 +846,25 @@ body {
   margin-top: 15px;
   width: 40px;
   height: 8px;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   border-radius: 10px;
 }
 .ouerServises .bg1-img p {
   color: rgb(206, 206, 206);
   font-size: 20px;
 }
+.ouerServises .bg1-img button {
+  color: white;
+  font-family: main-font;
+  background-color: var(--primary);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 10%;
+}
 .ouerServises .bg2-img {
-  background-image: url(../img/new/WhatsApp\ Image\ 2024-04-30\ at\ 10.44.16.jpeg);
+  background-image: url(../img/transito/c2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -885,15 +879,25 @@ body {
   margin-top: 15px;
   width: 40px;
   height: 8px;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   border-radius: 10px;
 }
 .ouerServises .bg2-img p {
   color: rgb(206, 206, 206);
   font-size: 20px;
 }
+.ouerServises .bg2-img button {
+  color: white;
+  font-family: main-font;
+  background-color: var(--primary);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 10%;
+}
 .ouerServises .bg3-img {
-  background-image: url(../img/new/WhatsApp\ Image\ 2024-04-30\ at\ 10.44.18.jpeg);
+  background-image: url(../img/transito/c3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -908,38 +912,59 @@ body {
   margin-top: 15px;
   width: 40px;
   height: 8px;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   border-radius: 10px;
 }
 .ouerServises .bg3-img p {
   color: rgb(206, 206, 206);
   font-size: 20px;
 }
+.ouerServises .bg3-img button {
+  color: white;
+  font-family: main-font;
+  background-color: var(--primary);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 10%;
+}
 .ouerServises .bg4-img {
-  background-image: url(../img/new/WhatsApp\ Image\ 2024-04-30\ at\ 10.44.20.jpeg);
+  background-image: url(../img/transito/c4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 10px;
 }
 .ouerServises .bg4-img h3 {
+  margin-top: 10%;
   color: white;
   font-weight: main-font;
-  font-size: 22px;
+  font-size: 18px;
 }
 .ouerServises .bg4-img .line {
   margin-top: 15px;
   width: 40px;
   height: 8px;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   border-radius: 10px;
 }
 .ouerServises .bg4-img p {
   color: rgb(206, 206, 206);
   font-size: 20px;
 }
+.ouerServises .bg4-img button {
+  color: white;
+  font-family: main-font;
+  background-color: var(--primary);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 10%;
+}
 .ouerServises .bg5-img {
-  background-image: url(../img/new/WhatsApp\ Image\ 2024-04-30\ at\ 10.44.23.jpeg);
+  background-image: url(../img/transito/car4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -954,7 +979,7 @@ body {
   margin-top: 15px;
   width: 40px;
   height: 8px;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   border-radius: 10px;
 }
 .ouerServises .bg5-img p {
@@ -962,7 +987,7 @@ body {
   font-size: 20px;
 }
 .ouerServises .bg6-img {
-  background-image: url(../img/new/WhatsApp\ Image\ 2024-04-30\ at\ 10.44.24.jpeg);
+  background-image: url(../img/transito/car1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -977,7 +1002,7 @@ body {
   margin-top: 15px;
   width: 40px;
   height: 8px;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   border-radius: 10px;
 }
 .ouerServises .bg6-img p {
@@ -985,7 +1010,7 @@ body {
   font-size: 20px;
 }
 .ouerServises .bg7-img {
-  background-image: url(../img/new/WhatsApp\ Image\ 2024-04-30\ at\ 10.44.43.jpeg);
+  background-image: url(../img/transito/car2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1000,7 +1025,7 @@ body {
   margin-top: 15px;
   width: 40px;
   height: 8px;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   border-radius: 10px;
 }
 .ouerServises .bg7-img p {
@@ -1008,7 +1033,7 @@ body {
   font-size: 20px;
 }
 .ouerServises .bg8-img {
-  background-image: url(../img/new/WhatsApp\ Image\ 2024-04-30\ at\ 10.44.39.jpeg);
+  background-image: url(../img/transito/car5.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1023,7 +1048,7 @@ body {
   margin-top: 15px;
   width: 40px;
   height: 8px;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   border-radius: 10px;
 }
 .ouerServises .bg8-img p {
@@ -1031,7 +1056,7 @@ body {
   font-size: 20px;
 }
 .ouerServises .bg9-img {
-  background-image: url(../img/new/WhatsApp\ Image\ 2024-04-30\ at\ 10.44.23.jpeg);
+  background-image: url(../img/transito/car3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1046,12 +1071,15 @@ body {
   margin-top: 15px;
   width: 40px;
   height: 8px;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   border-radius: 10px;
 }
 .ouerServises .bg9-img p {
   color: rgb(206, 206, 206);
   font-size: 20px;
+}
+.ouerServises #TransCito {
+  color: var(--primary) !important;
 }
 .ouerServises .owl-theme .owl-dots .owl-dot span {
   display: none;
@@ -1067,19 +1095,30 @@ body {
   margin-left: 3px;
   width: 50px;
   height: 3px;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   border-radius: 10px;
 }
 .ouerServises .blue-line hr {
   margin-left: 3px;
   width: 50px;
   height: 3px;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   border-radius: 10px;
 }
 
+.contact-me a {
+  background-color: var(--primary);
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin-bottom: 17px;
+  width: 222px;
+  margin: auto !important;
+}
 .contact-me .content {
-  background-image: linear-gradient(to right, #423d43, var(--blue-color));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8196078431), var(--primary));
   border-radius: 20px;
   width: 100%;
   position: relative;
@@ -1094,7 +1133,7 @@ body {
 }
 .contact-me .content span {
   font-size: inherit;
-  color: var(--blue-color);
+  color: var(--primary);
   font-family: main-font;
 }
 .contact-me .content p {
@@ -1129,7 +1168,7 @@ body {
   font-family: main3-font;
 }
 .email .line {
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   width: 50px;
   height: 5px;
   border-radius: 10px;
@@ -1178,7 +1217,7 @@ body {
 }
 .email button {
   margin-left: 40%;
-  background-color: var(--blue-color);
+  background-color: var(--primary);
   color: white;
   font-weight: 500;
   border: none;
@@ -1187,10 +1226,14 @@ body {
   margin-bottom: 17px;
 }
 
+h3 {
+  color: var(--primary) !important;
+}
+
 .footer {
   position: relative;
   margin-top: 80px;
-  background-image: url(../img/cleanGlasses.jpg);
+  background-image: url(../img/transito/plante.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1202,8 +1245,17 @@ body {
   font-size: 20px;
   color: white;
 }
+.footer a {
+  background-color: var(--primary);
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+}
 .footer h5 {
-  color: var(--blue-color);
+  color: var(--primary);
   font-family: main6-font;
 }
 .footer .group-media {
@@ -1215,11 +1267,12 @@ body {
 .footer hr {
   width: 85%;
   color: white;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   margin: auto;
+  margin-top: 21px;
 }
 .footer span {
-  color: var(--blue-color);
+  color: var(--primary);
   font-family: main5-font;
   font-weight: 700;
 }
@@ -1238,4 +1291,84 @@ nav .active {
 }
 nav .active a {
   color: #199ebd !important;
+}
+
+@media (max-width: 768px) {
+  h2,
+  h4,
+  h3 {
+    font-size: 1rem !important;
+  }
+  .contact-me .content p {
+    font-size: 16px !important;
+  }
+}
+.owl-dot {
+  margin-left: 3px;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary) !important;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.owl-dots .active {
+  background-color: var(--primary) !important;
+  opacity: 1 !important;
+}
+
+#endText {
+  color: #ff6400 !important;
+  margin: auto;
+  width: 80%;
+  color: #ff6400 !important;
+  margin: auto;
+  width: 80%;
+  text-align: start;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  #endText {
+    width: 95%;
+  }
+}
+@media (max-width: 768px) {
+  #direc {
+    direction: ltr !important;
+  }
+}
+.main2 {
+  font-size: 40px !important;
+  color: white;
+  font-family: system-ui !important;
+  font-weight: 800 !important;
+  /* font-family: main3-font; */
+  letter-spacing: 0.4px !important;
+}
+
+.head {
+  background: linear-gradient(to left, rgba(11, 12, 12, 0.22), rgba(8, 23, 26, 0.75)) !important;
+}
+
+#w22,
+#w23,
+#w24 {
+  margin-top: -22px !important;
+}
+
+.f12 {
+  font-size: 12px !important;
+  margin: 3px 0px !important;
+}
+
+.m5 {
+  margin: 3px 0 !important;
+}
+
+.bg1-img p,
+.bg2-img p,
+.bg1-img3 p,
+.bg4-img p {
+  margin: 0px 0 !important;
 }/*# sourceMappingURL=style.css.map */

@@ -19,18 +19,18 @@ document.addEventListener("DOMContentLoaded", function () {
 //////////change background for hero section
 
 // select landing page element
+// Select landing page element
 let landingPage = document.querySelector(".features");
 
-// get Array of images
-let imgArray = [
-  "../img/menClean.jpg",
-  "../img/background1.jpeg",
-  "../img/background2.jpeg",
-];
+// Get array of images
+let imgArray = ["../img/transito/bg2.webp"];
 
-// change background url
+// Change background url at intervals
 setInterval(function () {
   let randomNum = Math.floor(Math.random() * imgArray.length);
   landingPage.style.transition = "3s";
-  landingPage.style.backgroundImage = 'url(" ' + imgArray[randomNum] + '")';
+  landingPage.style.backgroundImage =
+    'linear-gradient(to left, rgb(11 12 12 / 19%), rgb(8 23 26 / 85%)), url("' +
+    imgArray[randomNum] +
+    '")';
 }, 4000);

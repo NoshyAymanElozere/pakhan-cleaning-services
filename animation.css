@@ -1,0 +1,673 @@
+/* تأثيرات الظهور */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-up {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-down {
+  animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fade-in-left {
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fade-in-right {
+  animation: fadeInRight 1s ease-in-out;
+}
+
+/* تأثيرات التحريك */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slide-in {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.slide-in-up {
+  animation: slideInUp 0.5s ease-in-out;
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.slide-in-down {
+  animation: slideInDown 0.5s ease-in-out;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slide-in-left {
+  animation: slideInLeft 0.5s ease-in-out;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slide-in-right {
+  animation: slideInRight 0.5s ease-in-out;
+}
+
+/* تأثيرات التكبير */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.zoom-in {
+  animation: zoomIn 0.6s ease-in-out;
+}
+
+@keyframes zoomInUp {
+  0% {
+    transform: scale(0) translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+.zoom-in-up {
+  animation: zoomInUp 0.6s ease-in-out;
+}
+
+@keyframes zoomInDown {
+  0% {
+    transform: scale(0) translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+.zoom-in-down {
+  animation: zoomInDown 0.6s ease-in-out;
+}
+
+@keyframes zoomInLeft {
+  0% {
+    transform: scale(0) translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateX(0);
+    opacity: 1;
+  }
+}
+.zoom-in-left {
+  animation: zoomInLeft 0.6s ease-in-out;
+}
+
+@keyframes zoomInRight {
+  0% {
+    transform: scale(0) translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateX(0);
+    opacity: 1;
+  }
+}
+.zoom-in-right {
+  animation: zoomInRight 0.6s ease-in-out;
+}
+
+/* تأثيرات الدوران */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rotate {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotateIn {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+.rotate-in {
+  animation: rotateIn 1s ease-in-out;
+}
+
+@keyframes rotateInUpRight {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) translateY(0);
+  }
+}
+.rotate-in-up-right {
+  animation: rotateInUpRight 1s ease-in-out;
+}
+
+/* تأثيرات الاهتزاز */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shakeX {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+}
+.shake-x {
+  animation: shakeX 0.5s ease-in-out;
+}
+
+@keyframes shakeY {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+}
+.shake-y {
+  animation: shakeY 0.5s ease-in-out;
+}
+
+/* تأثيرات التصغير */
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+.shrink {
+  animation: shrink 0.5s ease-in-out;
+}
+
+/* تأثيرات الخفقان */
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+.pulse {
+  animation: pulse 1s ease-in-out infinite;
+}
+
+/* تأثيرات الزوم */
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+.zoom-out {
+  animation: zoomOut 0.6s ease-in-out;
+}
+
+@keyframes zoomOutDown {
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0) translateY(100%);
+    opacity: 0;
+  }
+}
+.zoom-out-down {
+  animation: zoomOutDown 0.6s ease-in-out;
+}
+
+/* تأثيرات الانتقال */
+@keyframes flip {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+.flip {
+  animation: flip 0.6s ease-in-out;
+}
+
+@keyframes flipInX {
+  0% {
+    opacity: 0;
+    transform: perspective(400px) rotateY(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(400px) rotateY(0);
+  }
+}
+.flip-in-x {
+  animation: flipInX 0.6s ease-in-out;
+}
+
+/* تأثيرات التحرك */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+/* تأثيرات التفجير */
+@keyframes explode {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+.explode {
+  animation: explode 0.6s ease-in-out;
+}
+
+/* تأثيرات الأضواء */
+@keyframes light {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+.light {
+  animation: light 1s infinite;
+}
+
+/* تأثيرات الفتح */
+@keyframes expand {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.expand {
+  animation: expand 0.5s ease-in-out;
+}
+
+/* تأثيرات التلاشي */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.fade-out {
+  animation: fadeOut 1s ease-in-out;
+}
+
+/* تأثيرات أخرى متنوعة */
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.swing {
+  animation: swing 1s ease-in-out;
+}
+
+@keyframes wobble {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-25px);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.wobble {
+  animation: wobble 1s ease-in-out;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.bounce-in {
+  animation: bounceIn 0.75s ease-in-out;
+}
+
+/* إضافات أكثر من 200 تأثير */
+@keyframes bounceOut {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+.bounce-out {
+  animation: bounceOut 0.5s ease-in-out;
+}
+
+@keyframes slideOutUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+.slide-out-up {
+  animation: slideOutUp 0.5s ease-in-out;
+}
+
+@keyframes slideOutDown {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+.slide-out-down {
+  animation: slideOutDown 0.5s ease-in-out;
+}
+
+@keyframes slideOutLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+.slide-out-left {
+  animation: slideOutLeft 0.5s ease-in-out;
+}
+
+@keyframes slideOutRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+.slide-out-right {
+  animation: slideOutRight 0.5s ease-in-out;
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-1000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.bounce-in-down {
+  animation: bounceInDown 0.75s ease-in-out;
+}
+
+/* المزيد من الأنماط */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.fade-in-scale {
+  animation: fadeInScale 0.5s ease-in-out;
+}
+
+@keyframes zoomOutRight {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0) translateX(100%);
+  }
+}
+.zoom-out-right {
+  animation: zoomOutRight 0.6s ease-in-out;
+}
+
+/* تكرار الأنماط السابقة مع تعديلات */
+@keyframes lightSpeedIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.light-speed-in {
+  animation: lightSpeedIn 1s ease-in-out;
+}
+
+@keyframes lightSpeedOut {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+.light-speed-out {
+  animation: lightSpeedOut 1s ease-in-out;
+}
+
+/* يمكن إضافة المزيد من الأنماط حسب الحاجة */

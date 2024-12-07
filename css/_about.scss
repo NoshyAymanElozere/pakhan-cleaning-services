@@ -5,10 +5,10 @@
 }
 .about2 {
   background-size: cover;
-  background: url(../img/menClean.jpg);
+  background: url(../img/transito/bg2.webp);
   background-position: center;
   position: relative;
-
+  margin-top: -54px;
   .navbar {
     ul {
       li a {
@@ -17,7 +17,7 @@
       }
 
       a:hover {
-        color: var(--blue-color);
+        color: var(--primary);
       }
     }
   }
@@ -36,10 +36,10 @@
 
 .information {
   position: relative;
-  padding-top: 80px;
+  padding-top: 50px;
 
   .Pakhane {
-    max-height: 405px;
+    height: 100% !important;
     width: 100%;
   }
 
@@ -48,17 +48,25 @@
       max-height: 305px;
       width: 100%;
     }
+    .misin {
+      margin: 10px !important;
+    }
   }
 
   .about-text {
     span {
-      color: var(--blue-color);
+      color: var(--primary);
       font-family: main-font;
+      font-size: 16px !important;
     }
 
     p {
-      font-size: 20px;
-      line-height: 1.5;
+      overflow: hidden !important;
+      font-size: 15px;
+      line-height: 1.5 !important;
+      margin: 0 !important;
+      margin: 4px 0 !important;
+      text-align: left !important;
     }
   }
 }
@@ -69,41 +77,120 @@
 }
 
 h3 {
-  padding-top: 80px;
+  padding-top: 10px;
   font-weight: bold;
   font-size: 2rem;
 }
 .nonMargin {
+  li {
+    color: #ff6400 !important;
+  }
   p {
-    font-size: 18px !important;
-    margin: 10px !important;
+    font-size: 17px !important;
+    margin: 10px 0px !important;
+    color: black !important;
+    text-align: left !important;
+    hyphens: auto;
   }
 }
 // more section//
 .more {
   margin-top: 70px;
-  background-image: linear-gradient(to right, #423d43, var(--blue-color));
+  background-image: linear-gradient(to right, #423d43, var(--primary));
   border-radius: 10px;
 
   h2 {
-    font-size: 50px;
+    font-size: 30px;
     font-family: main1-font;
     color: white;
     margin-bottom: 30px;
 
     span {
-      color: var(--blue-color);
+      color: var(--primary);
     }
   }
 
-  button {
-    background-color: transparent;
+  a {
+    background-color: #ff6400;
     color: white;
     border: 1px solid white;
     border-radius: 5px;
-    padding: 15px 25px;
+    padding: 15px 19px;
     margin-left: 50%;
     transform: translateX(-50%);
+    font-weight: 800;
     margin-bottom: 70px;
+    display: inline-block;
+    text-decoration: none;
+  }
+}
+// start new nav
+.navbar {
+  overflow: hidden !important;
+  height: 56px !important;
+  position: relative !important;
+  .navbar-brand {
+    img {
+      width: 150px;
+      margin-top: -62px !important;
+    }
+  }
+  .nav-link::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #199ebd;
+    display: block;
+    transition: 0.5s;
+  }
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  ul {
+    li a {
+      color: white;
+      font-size: 18px;
+    }
+    a:hover {
+      color: var(--primary);
+    }
+  }
+}
+@media (max-width: 768px) {
+  .misin {
+    padding: 5px !important;
+  }
+}
+.information2 {
+  padding-top: 5px !important;
+  span {
+    font-size: 15px;
+  }
+  p {
+    font-size: 14px !important;
+  }
+  .more a {
+    padding: 2px 8px !important;
+  }
+}
+.cars {
+  .card {
+    margin: 10px 0;
+    border: none;
+    min-height: 365px !important;
+    background-color: #f9f9f969;
+    box-shadow: 0px 2px 11px 0px #00000030;
+    .card-title {
+      color: var(--primary);
+      font-size: 19px;
+      font-weight: 700;
+      font-family: "main-font";
+    }
+    .card-body {
+      font-size: 16px !important;
+      font-weight: 500;
+      font-family: main4-font;
+      color: grey;
+    }
   }
 }

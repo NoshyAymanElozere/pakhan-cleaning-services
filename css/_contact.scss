@@ -1,10 +1,7 @@
-.headeer {
-  background: linear-gradient(to left, rgba(11, 12, 12, 0.49), rgb(8 23 26));
-  width: 100%;
-}
 .contact-me1 {
   background-size: cover;
   background: url(../img/menClean.jpg);
+
   position: relative;
 
   .navbar {
@@ -15,7 +12,7 @@
       }
 
       a:hover {
-        color: var(--blue-color);
+        color: var(--primary);
       }
     }
   }
@@ -60,7 +57,7 @@
   }
 
   .line {
-    background-color: var(--blue-color);
+    background-color: var(--primary);
     width: 50px;
     height: 5px;
     border-radius: 10px;
@@ -109,7 +106,7 @@
 
   button {
     margin-left: 40%;
-    background-color: var(--blue-color);
+    background-color: var(--primary);
     color: white;
     font-weight: 500;
     border: none;

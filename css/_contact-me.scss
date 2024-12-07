@@ -17,7 +17,7 @@
       }
 
       a:hover {
-        color: var(--blue-color);
+        color: var(--primary);
       }
     }
   }
@@ -36,7 +36,7 @@
 
 .more {
   margin-top: 70px;
-  background-image: linear-gradient(to right, #423d43, var(--blue-color));
+  background-image: linear-gradient(to right, #423d43, var(--primary));
   border-radius: 10px;
 
   h2 {
@@ -46,7 +46,7 @@
     margin-bottom: 30px;
 
     span {
-      color: var(--blue-color);
+      color: var(--primary);
     }
   }
 

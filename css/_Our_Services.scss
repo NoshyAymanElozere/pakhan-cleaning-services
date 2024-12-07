@@ -11,7 +11,7 @@
       }
 
       a:hover {
-        color: var(--blue-color);
+        color: var(--primary);
       }
     }
   }
@@ -36,7 +36,7 @@
     padding: 20px;
   }
   .bg1-img {
-    background-image: url(../img/new/ddddd.jpeg);
+    background-image: url(../img/transito/c1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -52,7 +52,7 @@
       margin-top: 15px;
       width: 40px;
       height: 8px;
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       border-radius: 10px;
     }
 
@@ -64,7 +64,7 @@
     button {
       color: white;
       font-family: main-font;
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       padding: 10px 20px;
       border: none;
       border-radius: 10px;
@@ -74,7 +74,7 @@
   }
 
   .bg2-img {
-    background-image: url(../img/new/about.jpeg);
+    background-image: url(../img/transito/c2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -90,7 +90,7 @@
       margin-top: 15px;
       width: 40px;
       height: 8px;
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       border-radius: 10px;
     }
 
@@ -102,7 +102,7 @@
     button {
       color: white;
       font-family: main-font;
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       padding: 10px 20px;
       border: none;
       border-radius: 10px;
@@ -112,7 +112,7 @@
   }
 
   .bg3-img {
-    background-image: url(../img/new/company.jpeg);
+    background-image: url(../img/transito/c3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -128,7 +128,7 @@
       margin-top: 15px;
       width: 40px;
       height: 8px;
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       border-radius: 10px;
     }
 
@@ -140,7 +140,7 @@
     button {
       color: white;
       font-family: main-font;
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       padding: 10px 20px;
       border: none;
       border-radius: 10px;
@@ -150,7 +150,7 @@
   }
 
   .bg4-img {
-    background-image: url(../img/new/company2.jpeg);
+    background-image: url(../img/transito/c4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -167,7 +167,7 @@
       margin-top: 15px;
       width: 40px;
       height: 8px;
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       border-radius: 10px;
     }
 
@@ -179,159 +179,7 @@
     button {
       color: white;
       font-family: main-font;
-      background-color: var(--blue-color);
-      padding: 10px 20px;
-      border: none;
-      border-radius: 10px;
-      margin-top: 20px;
-      margin-bottom: 10%;
-    }
-  }
-
-  .bg5-img {
-    background-image: url(../img/new/d.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 10px;
-
-    h3 {
-      color: white;
-      font-weight: main-font;
-      font-size: 22px;
-    }
-
-    .line {
-      margin-top: 15px;
-      width: 40px;
-      height: 8px;
-      background-color: var(--blue-color);
-      border-radius: 10px;
-    }
-
-    p {
-      color: rgb(206, 206, 206);
-      font-size: 20px;
-    }
-
-    button {
-      color: white;
-      font-family: main-font;
-      background-color: var(--blue-color);
-      padding: 10px 20px;
-      border: none;
-      border-radius: 10px;
-      margin-top: 20px;
-      margin-bottom: 10%;
-    }
-  }
-
-  .bg6-img {
-    background-image: url(../img/new/fac2.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 10px;
-
-    h3 {
-      color: white;
-      font-weight: main-font;
-      font-size: 22px;
-    }
-
-    .line {
-      margin-top: 15px;
-      width: 40px;
-      height: 8px;
-      background-color: var(--blue-color);
-      border-radius: 10px;
-    }
-
-    p {
-      color: rgb(206, 206, 206);
-      font-size: 20px;
-    }
-
-    button {
-      color: white;
-      font-family: main-font;
-      background-color: var(--blue-color);
-      padding: 10px 20px;
-      border: none;
-      border-radius: 10px;
-      margin-top: 20px;
-      margin-bottom: 10%;
-    }
-  }
-
-  .bg7-img {
-    background-image: url(../img/new/home.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 10px;
-
-    h3 {
-      color: white;
-      font-weight: main-font;
-      font-size: 22px;
-    }
-
-    .line {
-      margin-top: 15px;
-      width: 40px;
-      height: 8px;
-      background-color: var(--blue-color);
-      border-radius: 10px;
-    }
-
-    p {
-      color: rgb(206, 206, 206);
-      font-size: 20px;
-    }
-
-    button {
-      color: white;
-      font-family: main-font;
-      background-color: var(--blue-color);
-      padding: 10px 20px;
-      border: none;
-      border-radius: 10px;
-      margin-top: 20px;
-      margin-bottom: 10%;
-    }
-  }
-
-  .bg8-img {
-    background-image: url(../img/new/wash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 10px;
-
-    h3 {
-      color: white;
-      font-weight: main-font;
-      font-size: 22px;
-    }
-
-    .line {
-      margin-top: 15px;
-      width: 40px;
-      height: 8px;
-      background-color: var(--blue-color);
-      border-radius: 10px;
-    }
-
-    p {
-      color: rgb(206, 206, 206);
-      font-size: 20px;
-    }
-
-    button {
-      color: white;
-      font-family: main-font;
-      background-color: var(--blue-color);
+      background-color: var(--primary);
       padding: 10px 20px;
       border: none;
       border-radius: 10px;
